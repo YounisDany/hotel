@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center justify-content-between" style="padding: 10px 30px; background-color: #f8f9fa; height: auto;">
+
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="Logo">
+        <span class="d-none d-lg-block">Reservation</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+  
+    <nav class="header-nav d-flex align-items-center" style="gap: 20px;">
+      <ul class="d-flex align-items-center" style="gap: 20px; padding: 0; margin: 0; list-style: none;">
+  
+        <!-- Reservation Icon -->
+        <li class="nav-item text-center" style="background-color: #e3f2fd; padding: 10px 15px; border-radius: 10px; border: 1px solid #90caf9;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-calendar2-plus" style="font-size: 25px; color: #1976d2;"></i>
+            <span style="font-size: 14px; color: #1976d2;">Reservation</span>
+          </a>
+        </li>
+  
+        <!-- Front Desk Icon -->
+        <li class="nav-item text-center" style="background-color: #e8f5e9; padding: 10px 15px; border-radius: 10px; border: 1px solid #81c784;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-person-lines-fill" style="font-size: 25px; color: #388e3c;"></i>
+            <span style="font-size: 14px; color: #388e3c;">Front Desk</span>
+          </a>
+        </li>
+  
+        <!-- Cashiering Icon -->
+        <li class="nav-item text-center" style="background-color: #fff3e0; padding: 10px 15px; border-radius: 10px; border: 1px solid #ffb74d;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-cash-stack" style="font-size: 25px; color: #f57c00;"></i>
+            <span style="font-size: 14px; color: #f57c00;">Cashiering</span>
+          </a>
+        </li>
+  
+        <!-- Rooms Management Icon -->
+        <li class="nav-item text-center" style="background-color: #f3e5f5; padding: 10px 15px; border-radius: 10px; border: 1px solid #ba68c8;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-door-open" style="font-size: 25px; color: #8e24aa;"></i>
+            <span style="font-size: 14px; color: #8e24aa;">Rooms Management</span>
+          </a>
+        </li>
+  
+        <!-- AR Icon -->
+        <li class="nav-item text-center" style="background-color: #fbe9e7; padding: 10px 15px; border-radius: 10px; border: 1px solid #ffab91;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-file-earmark-text" style="font-size: 25px; color: #d84315;"></i>
+            <span style="font-size: 14px; color: #d84315;">AR</span>
+          </a>
+        </li>
+  
+        <!-- Miscellaneous Icon -->
+        <li class="nav-item text-center" style="background-color: #e1f5fe; padding: 10px 15px; border-radius: 10px; border: 1px solid #4fc3f7;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-grid" style="font-size: 25px; color: #039be5;"></i>
+            <span style="font-size: 14px; color: #039be5;">Miscellaneous</span>
+          </a>
+        </li>
+  
+        <!-- Setup Icon -->
+        <li class="nav-item text-center" style="background-color: #ede7f6; padding: 10px 15px; border-radius: 10px; border: 1px solid #b39ddb;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-gear" style="font-size: 25px; color: #5e35b1;"></i>
+            <span style="font-size: 14px; color: #5e35b1;">Setup</span>
+          </a>
+        </li>
+  
+        <!-- End of Day Icon -->
+        <li class="nav-item text-center" style="background-color: #f0f4c3; padding: 10px 15px; border-radius: 10px; border: 1px solid #cddc39;">
+          <a href="#" class="nav-link d-flex flex-column align-items-center">
+            <i class="bi bi-calendar-check" style="font-size: 25px; color: #827717;"></i>
+            <span style="font-size: 14px; color: #827717;">End of Day</span>
+          </a>
+        </li>
+  
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  
+  </header><!-- End Header -->
+  
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar" style="background-color: #FFFFFF; padding-top: 20px;">
+
+    <ul class="sidebar-nav" id="sidebar-nav" style="padding: 0; margin: 0;">
+  
+      <!-- New Reservation -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-calendar-plus" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">New Reservation</span>
+        </a>
+      </li><!-- End New Reservation -->
+  
+      <!-- Update Reservation -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-calendar2-check" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Update Reservation</span>
+        </a>
+      </li><!-- End Update Reservation -->
+  
+      <!-- Blocks -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-layers" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Blocks</span>
+        </a>
+      </li><!-- End Blocks -->
+  
+      <!-- Profiles -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-people" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Profiles</span>
+        </a>
+      </li><!-- End Profiles -->
+  
+      <!-- Room Plane -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-building" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Room Plane</span>
+        </a>
+      </li><!-- End Room Plane -->
+  
+      <!-- Floor Plane -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-diagram-2" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Floor Plane</span>
+        </a>
+      </li><!-- End Floor Plane -->
+  
+      <!-- Confirmation -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-check-circle" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Confirmation</span>
+        </a>
+      </li><!-- End Confirmation -->
+  
+      <!-- Calendar -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #FFFFFF; background-color: #001f3f; padding: 10px; border-radius: 5px;">
+          <i class="bi bi-calendar" style="font-size: 20px; color: #FFFFFF;"></i>
+          <span style="margin-left: 10px;">Calendar</span>
+        </a>
+      </li><!-- End Calendar -->
+  
+    </ul>
+  
+  </aside><!-- End Sidebar-->
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Room Availability</h1>
+      <p>Monday, November, 09 , 2009, 1 Nights , 1 Rooms , 1 Adults , 0 Children</p>
+    </div><!-- End Page Title -->
+  
+    <!-- Table Section (الجدول) -->
+    <div class="table-section" style="background-color: #06283D; padding: 20px; border-radius: 10px; color: white;">
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th>Room Type</th>
+            <th>OB</th>
+            <th>SU</th>
+            <th>RUO</th>
+            <th>HT1</th>
+            <th>HT2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Include overbooking</td>
+            <td>498</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>Physical inventory</td>
+            <td>498</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>COMP</td>
+            <td>498</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>HOUSE</td>
+            <td>498</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>RACK</td>
+            <td>498</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>PackNet</td>
+            <td>498</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="avgRates">
+            <label class="form-check-label" for="avgRates">Average Rates</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="totalRate">
+            <label class="form-check-label" for="totalRate">Total Rate</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="firstNight">
+            <label class="form-check-label" for="firstNight">First Night</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="dayUse">
+            <label class="form-check-label" for="dayUse">Day Use</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="closed">
+            <label class="form-check-label" for="closed">Closed</label>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <label for="info" class="form-label">INFO</label>
+          <input type="text" class="form-control" id="info">
+        </div>
+  
+        <div class="col-md-3">
+          <label for="event" class="form-label">Event</label>
+          <input type="text" class="form-control" id="event">
+        </div>
+  
+        <div class="col-md-3">
+          <button type="button" class="btn btn-success">Overbook</button>
+          <button type="button" class="btn btn-info">Rate Info</button>
+          <button type="button" class="btn btn-warning">Analyze</button>
+          <button type="button" class="btn btn-primary">OK</button>
+          <button type="button" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+    </div><!-- End Table Section -->
+  
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
